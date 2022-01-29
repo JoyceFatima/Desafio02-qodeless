@@ -2,7 +2,6 @@ const form = document.getElementById("meuFormulario");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  // console.log("meu event:", event);
 
   chenckInputs();
 });
