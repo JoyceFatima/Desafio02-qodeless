@@ -1,43 +1,52 @@
-// const form = document.getElementById('form')
-// const email = document.getElementById('email')
-// const nomecompleto = document.getElementById('nomecompleto')
-// const idade = document.getElementById('idade')
-// const telefone = document.getElementById('telefone')
-// const usuario = document.getElementById('usuario')
-// const senha = document.getElementById('senha')
-// const senha2 = document.getElementById('senha2')
+const form = document.getElementById("meuFormulario");
 
-// form.addEventListener('submit', (e) => {
-//   e.preventDefault();
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  // console.log("meu event:", event);
 
-//   chenckInputs();
-// });
+  chenckInputs();
+});
 
-// function chenckInputs() {
-//   const emailValue = email.value.trim();
-//   const nomeValue = nomecompleto.value.trim();
-//   const idadeValue = idade.value.trim();
-//   const telefoneValue = telefone.value.trim();
-//   const usuarioValue = usuario.value.trim();
-//   const senhaValue = senha.value.trim();
-//   const senha2Value = senha2.value.trim();
+function chenckInputs() {
+  const email = document.getElementById("email");
+  const nome = document.getElementById("nome");
+  const idade = document.getElementById("idade");
+  const telefone = document.getElementById("telefone");
+  const usuario = document.getElementById("usuario");
+  const senha = document.getElementById("senha");
+  const confirmacao_senha = document.getElementById("confirmacao_senha");
 
-//   if (emailValue === '') {
-//     setErrorFor(email, "Email invalido");
-//   } else {
-//     setSuccessFor(email);
-//   }
-// }
+  const emailValue = email.value.trim();
+  const nomeValue = nome.value.trim();
+  const idadeValue = idade.value.trim();
+  const telefoneValue = telefone.value.trim();
+  const usuarioValue = usuario.value.trim();
+  const senhaValue = senha.value.trim();
+  const confirmacaoSenhaValue = confirmacao_senha.value.trim();
 
-// function setErrorFor(input) {
-//   const formulario = input.parentElement;
-// }
+  if (emailValue === "") {
+    alert('Email é obrigatório!');
+    return false;
+  }
 
-// if (button_cadastrar == "") {
-//   console.error("Algo deu errado, tente novamente!");
-// } else (button_cadastrar == getElementById(form))
+  if (nomeValue === "") {
+    alert('Nome é obrigatório!');
+    return false;
+  }
 
-// function button_cadastrar(aviso) {
-//   console.log(aviso)
-// }
+  // TODO: Fazer validação de obrigatoriedade para os demais campos
 
+  // Caso sucesso (Todos campos preenchidos)
+  alert('Dados enviados com sucesso! Parabéns amigo!');
+  console.log(
+    'Dados enviados com sucesso:',
+    'Email:', emailValue,
+    'Nome:', nomeValue,
+    'Idade:', idadeValue,
+    'Telefone:', telefoneValue,
+    'Usuario:', usuarioValue,
+    'Senha:', senhaValue,
+    'Confirmação Senha:', confirmacaoSenhaValue,
+  );
+  return true;
+}

@@ -1,0 +1,8 @@
+// function minhaFuncao() {
+
+// }
+
+// // Arrow Function
+// () => {
+
+// }
