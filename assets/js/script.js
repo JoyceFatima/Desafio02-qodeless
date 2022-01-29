@@ -34,7 +34,25 @@ function chenckInputs() {
     return false;
   }
 
-  // TODO: Fazer validação de obrigatoriedade para os demais campos
+  if (idadeValue === "") {
+    alert('Idade é obrigatório!')
+  }
+
+  if (telefoneValue === "") {
+    alert('Idade é obrigatório!')
+  }
+
+  if (usuarioValue === "") {
+    alert('Idade é obrigatório!')
+  }
+
+  if (senhaValue === "") {
+    alert('Idade é obrigatório!')
+  }
+
+  if (confirmacaoSenhaValue === "") {
+    alert('Idade é obrigatório!')
+  }
 
   // Caso sucesso (Todos campos preenchidos)
   alert('Dados enviados com sucesso! Parabéns amigo!');
