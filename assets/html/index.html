@@ -12,7 +12,6 @@
   <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon" />
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="stylesheet" href="/assets/js/script.js">
   <title>Blue - Cadastro</title>
 </head>
 <body>
@@ -20,37 +19,37 @@
     <section class="main">
       <h1 class="title">Blue</h1>
       <div class="midias_sociais">
-        <a href="#"><i class="fab fa-google"></i></a>
-        <a href="#"><i class="fab fa-facebook-square"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="https://accounts.google.com/ServiceLogin/identifier?elo=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><i class="fab fa-google"></i></a>
+        <a href="https://pt-br.facebook.com"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.linkedin.com/login/pt?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin"><i class="fab fa-linkedin"></i></a>
       </div>
-      <form class="formulario">
+      <form class="formulario" action="#">
         <label for="Email">
-          <input type="email" id="name" name="email" placeholder="Email">
+          <input type="email" id="email" name="email" placeholder="Email">
         </label>
 
         <label for="Nome Completo">
-          <input type="text" id="name" name="nome" placeholder="Nome Completo">
+          <input type="text" id="nome" name="nome" placeholder="Nome Completo">
         </label>
         
         <label for="Idade">
-          <input type="text" id="name" name="idade" placeholder="Data de Nascimento">
+          <input type="text" id="idade" name="idade" placeholder="Data de Nascimento">
         </label>
 
         <label for="Telefone">
-          <input type="text" id="name" name="telefone" placeholder="Telefone">
+          <input type="tel" id="telefone" name="telefone" placeholder="Telefone">
         </label>
 
         <label for="Usuário">
-          <input type="text" id="name" name="name" placeholder="Usuário">
+          <input type="text" id="usuario" name="usuario" placeholder="Usuário">
         </label>
 
         <label for="Senha">
-          <input type="password" id="name" name="senha" placeholder="Senha">
+          <input type="password" id="senha" name="senha" placeholder="Senha">
         </label>
       
         <label for="Confirmação de senha">
-          <input type="password" id="name" name="senha" placeholder="Confirmação de senha">
+          <input type="password" id="senha2" name="confirmacao_senha" placeholder="Confirmação de senha">
         </label>
 
         <div class="button_cadastrar">
@@ -70,5 +69,8 @@
     </picture>
   </section>
 
+  <script src="/assets/js/script.js"></script>
+
 </body>
+
 </html>
