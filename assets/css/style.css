@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito:wght@500&family=Ubuntu:wght@500&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+}
+
+.main {
+  background: #4F5AF0;
+  
+  padding: 6.1em 9em 2.1em;
+
+  justify-content: center;
+}
+
+.title {
+  width: 35vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+
+  font-size: 30px;
+  color: #4F5AF0;
+  background: linear-gradient(90deg, #4F5AF0, #ffffffdc, #4F5AF0);
+
+  cursor: pointer;
+}
+
+.midias_sociais {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.midias_sociais a {
+  font-size: 25px;
+  color: #ffffffda ;
+  padding: .5em;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario input {
+  margin: .5em;
+  padding: 10px 30px;
+
+  border-radius: 20px;
+  border-width: 1.8px;
+  border-color: #ffffff;
+
+  background: #4F5AF0;
+  color: #ffffff;
+
+}
+
+input::placeholder {
+  color: #ffffffda;
+}
+
+.button_cadastrar input {
+  margin-top: 1em;
+
+  border: none;
+  color: #000000;
+  background: #ffffffda;
+
+  cursor: pointer;
+}
+
+.cadastrado {
+  color: #d1d1d1;
+  margin: 4em 0em;
+  align-items: center;
+}
+
+.cadastrado a {
+  text-decoration: none;
+  color: #ececec;
+}
+
+/* picture */
+
+.img {
+  background: #FBFCFF;
+
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_main {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
